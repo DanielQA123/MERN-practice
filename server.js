@@ -4,6 +4,7 @@ const express = require('express');
 
 //Initalize the app
 const app = express();
+app.use(express.json());
 
 const productRoute = require("./routes/products");
 

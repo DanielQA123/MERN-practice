@@ -14,5 +14,4 @@ router.get("/create", (req, res) =>{
     res.send(`Hello there ${name}`);
 });
 
-
 module.exports = router;
