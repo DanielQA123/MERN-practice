@@ -1,18 +1,21 @@
 {
   "name": "mern",
   "version": "1.0.0",
-  "description": "QA training to practice MERN ",
+  "description": "Express practice",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Daniel Ahuchogu",
-  "license": "ISC",
-  "dependencies": {
-    "clock": "^1.0.2",
-    "cowsay": "^1.4.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielQA123/MERN-practice.git"
   },
+  "author": "Daniel Ahuch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DanielQA123/MERN-practice/issues"
+  },
+  "homepage": "https://github.com/DanielQA123/MERN-practice#readme",
   "devDependencies": {
     "nodemon": "^2.0.7"
   }
