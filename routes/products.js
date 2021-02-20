@@ -4,8 +4,14 @@ const router = require('express').Router();
 
 //request methods => CRUD
 //GET:
-router.get("/getAll", (req, res) =>{
+router.get("/getAll", (req, res, next) =>{
     res.send(`Here is the information needed .....`);
+    next();
+});
+
+router.use((req, res) =>{
+    console.log("hello");
+    res.send("done");
 });
 
 //POST: 
