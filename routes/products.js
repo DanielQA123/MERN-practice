@@ -1,13 +1,20 @@
-'use strict;'
+'use strict';
 
 const router = require('express').Router();
+const {Product} = require("../config/database");
 
 let products = ["chicken", "bread", "water", "grapes"];
 
 //request methods => CRUD
 //GET:
 router.get("/getAll", (req, res, next) =>{
-    res.send(`Here is the information needed .....${products}`);
+    Product.find((err, products) =>{
+        if(err){
+            console.log(err)
+        }
+        res.send(products);
+    })
+    // res.send(`Here is the information needed .....${products}`);
     // next();
 });
 
