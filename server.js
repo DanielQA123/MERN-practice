@@ -9,11 +9,22 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+//Custom Middleware: 
+const logger = (req, res, next) => {
+    console.log(new Date());
+    next();
+}
+
+//This will print the date before each request..
+app.use(logger);
+
+//Importing all od the routes in product.js
+
 const productRoute = require("./routes/products");
 
 app.use("/product", productRoute);
 
 //communicate with the app on a specific port
-const server = app.listen(6020, () =>{
+const server = app.listen(6020, () => {
     console.log(`Server has successfully started on port number: ${server.address().port}`);
 });
