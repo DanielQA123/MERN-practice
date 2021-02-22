@@ -19,5 +19,5 @@ mongoose.connect(`mongodb://localhost:27017/tesco`, (err) =>{
     }
 });
 
-module.exports = {"Products": Product};
+module.exports = {"Product": Product};
 
