@@ -4,7 +4,7 @@ import {useState} from 'react';
 import AddGamers from './AddGamers';
 import GameRoom from './GameRoom';
 
-const Game = () => { 
+const Games = () => { 
     const [playerName, setPlayerName] = useState("");
     const [players, setPlayers] = useState([]);
 }
@@ -30,4 +30,4 @@ return(
     </>
 )
 
-export default Game;
+export default Games;
