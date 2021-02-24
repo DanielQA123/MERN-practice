@@ -9,6 +9,7 @@ import PropsComp from "./Components/03-Props/Props_Tutorial/PropsComp"
 import Individual from "./Components/03-Props/Pair-Task/Individual";
 
 import People from "./Components/03-Props/Pair-Task/People";
+import EmployeeTutorial from "./Components/10-Data-Requests/EmployeeTutorial";
 
 const App = () => {
   return (
@@ -19,7 +20,8 @@ const App = () => {
       {/* <Biopic/>
       <Standard/> */}
       {/* <PropsComp/> */}
-      <People/>
+      {/* <People/> */}
+      <EmployeeTutorial/>
     </div>
   );
 }
