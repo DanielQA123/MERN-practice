@@ -5,6 +5,7 @@ import Home from "./Components/09-Routing/Home";
 import About from "./Components/09-Routing/About";
 import Product from "./Components/09-Routing/Product";
 import Nav from "./Components/09-Routing/Nav";
+import NavOverview from "./Components/NavOverview";
 
 
 import Introduction from "./Components/01-Intro/First";
@@ -22,6 +23,7 @@ const App = () => {
   return (
     <div className="container">
       <Router>
+        <NavOverview/>
         <Nav/>
         <Switch>
           <Route exact path="/">
